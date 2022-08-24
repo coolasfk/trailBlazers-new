@@ -79,7 +79,7 @@ body {
       background-color: var(--base-bg-color);
         z-index: 0;
         display: grid;
-        grid-template-columns: 1fr;
+        
         grid-template-rows: 0.1fr 1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.1fr 0.1fr auto auto 0.2fr;
         grid-template-areas:
     "nav"
@@ -396,9 +396,9 @@ grid-template-columns: 1fr 10fr 1fr;
 .contact {
     grid-area: contact;
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
-    grid-template-rows: 0.2fr 0.8rem 0.1fr 0.5fr 0.0001fr 0.8rem minmax(10vw,auto) 0.8rem 0.3fr 0.8rem 0.3fr 0.3fr 0.3fr 0.3fr;
-    width: 100vw;
+    grid-template-columns: 10vw 80vw 10vw;
+    grid-template-rows: 0.2fr 0.8rem 0.1fr 0.5fr 0.0001fr 0.8rem minmax(10vw, auto) 0.8rem 0.3fr 0.8rem 0.3fr 0.3fr 0.3fr 0.3fr;
+   width: 100vw;
     justify-self: center;
 }
 
@@ -413,14 +413,14 @@ grid-template-columns: 1fr 10fr 1fr;
     margin-top: 0;
     margin-bottom: 0;
 }
-.contact form {
+form {
     grid-column: 2 / 3;
     grid-row: 7 / 8;
     justify-self: center;
     text-justify: center;
     display: grid;
     width: 100vw;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 10vw 80vw 10vw;
     grid-template-rows: 1fr 0.8rem 1fr 0.8rem 1fr 0.8rem minmax(1ch, auto) 0.8rem 1fr;
 }
 
@@ -485,21 +485,25 @@ grid-template-columns: 1fr 10fr 1fr;
 }
 .text.three {
     grid-row: 5 / 6;
+    grid-column: 2 / 3;
 }
 
 .text.four {
     grid-row: 9 / 10;
+    grid-column: 2 / 3;
 
 }
 
 .text.five {
     grid-row: 11 / 12;
     text-align: center;
+    grid-column: 2 / 3;
 }
 
 .text.six {
     grid-row: 13 / 14;
     text-align: center;
+    grid-column: 2 / 3;
    
 }
 
